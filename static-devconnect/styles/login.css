@@ -1,0 +1,36 @@
+main{
+  background: linear-gradient(#169F71, #1779AB, #1F2C38);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main > div{
+  background-color:#E3E6E9;
+  width: 100%;
+  max-width: 342px;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario-campos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: -40px;
+}
+
+#secao-instalacao{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}

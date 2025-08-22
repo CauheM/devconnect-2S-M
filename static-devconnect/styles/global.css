@@ -1,0 +1,53 @@
+/* 1 forma de utilizar uma fonte */
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 2 forma de utilizar uma fonte */
+@font-face {
+    font-family: Mozilla_Text;
+    src: url(../assets/fonts/Mozilla_Text\,Roboto_Condensed/Mozilla_Text);
+}
+
+@font-face {
+    font-family: Roboto_Condensed;
+    src: url(../assets/fonts/Mozilla_Text\,Roboto_Condensed/Roboto_Condensed); 
+}
+
+/* variaveis */
+:root{
+  --cor-azulEscuro: #1F2C38;
+  --cor-azul: #1779AB;
+  --cor-verdeEscuro: #169F71;
+  --cinzaClaro: #E3E6E9;
+  --verde: #67C226;
+
+
+  --borda: 1px solid #DDDDDD; 
+  --borda-arredondada: 5px solid #efefef;
+
+  --tamanho-fonte-s: 16px;
+  --tamanho-fonte-m: 17px;
+  --tamanho-fonte-b: 20px;
+}
+
+/* SELETOR GLOBAL */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mozilla Text", sans-serif;
+  /* font-family: "Roboto Condensed", sans-serif; */
+
+}
+
+body{
+ background-color: var(--cinzaClaro);   
+
+}
+
+h1{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
