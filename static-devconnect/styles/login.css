@@ -1,36 +1,92 @@
-main{
-  background: linear-gradient(#169F71, #1779AB, #1F2C38);
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
+    background: linear-gradient(#169F71, #1779AB, #1F2C38);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 
 }
 
-main > div{
-  background-color:#E3E6E9;
-  width: 100%;
-  max-width: 342px;
-  height: 400px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
+}
+
+form>p{
+    text-transform: uppercase; 
+    font-size: var(--tamanho-fonte-md);
+    color: var(--cor-cinza-escuro2);
+  }
+  
+form > a{
+    color: var(--cor-3);
+    font-size: var(--tamanho-fonte-sm);
+    text-decoration: none;
+  }
+
+section > p > a{
+    color: var(--cor-3);
+    text-decoration: none;
+}
+
+#secao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tamanho-fonte-sm);
+    height: 60px;
+}
+
+.estilo-formulario {
+    width: 100%;
+    max-width: 342px;
+    background-color: var(--cor-4);
+    border: var(--borda);
+}
+
+
+#secao-instalacao{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .formulario-campos{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: -40px;
+  width: 100%;
+  gap: 5px;
 }
 
-#secao-instalacao{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+.formulario-botao-verde{
+  width: 100%;
+
+}
+
+.formulario-campos>input{
+ height: 25px;
+ color: var(--cor-cinza-escuro2);
+ background-color: var(--cor-cinza-escuro4);
+ border-radius: var(--borda-arredondada);
+ border: var(--borda);
+}
+
+main>div>p{
+  font-size: var(--tamanho-fonte-sm);
+  color: var(--cor-4);
 }

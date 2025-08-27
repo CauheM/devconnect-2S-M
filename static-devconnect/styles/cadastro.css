@@ -1,0 +1,112 @@
+main{
+  background: linear-gradient(#169F71, #1779AB, #1F2C38);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main>div{
+  width: 100%;
+  display: flex;   
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 3%;
+}
+
+form > p{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--tamanho-fonte-sm);
+  color: var(--cor-cinza-escuro2);
+}
+
+main>div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload{
+  padding: 10px 10px;
+  width: 100%;
+  background-color: var(--cor-2);
+  color: #FFF;
+  text-transform: uppercase;
+  border: var(--borda-arredondada);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+
+#secao-cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--tamanho-fonte-sm);
+  height: 60px;
+}
+
+.estilo-formulario {
+  width: 100%;
+  max-width: 342px;
+  background-color: var(--cor-4);
+  border: var(--borda);
+}
+
+#secao-instalacao{
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formulario-campo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  }  
+
+ 
+  
+.formulario-campo>input{
+  height: 25px;
+  color: var(--cor-cinza-escuro2);
+  background-color: var(--cor-cinza-escuro4);
+  border-radius: var(--borda-arredondada);
+  border: var(--borda);
+ }
+
+section>p>a{
+  color: var(--cor-3);
+  text-decoration: none;
+  font-size: var(--tamanho-fonte-sm);
+}
+
+div>p{
+  color: var(--cor-cinza-escuro4);
+  font-size: var(--tamanho-fonte-sm);
+}
+
