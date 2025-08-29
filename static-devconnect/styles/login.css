@@ -67,26 +67,26 @@ section > p > a{
 }
 
 .formulario-campos{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 5px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 5px;
 }
 
 .formulario-botao-verde{
-  width: 100%;
+   width: 100%;
 
 }
 
 .formulario-campos>input{
- height: 25px;
- color: var(--cor-cinza-escuro2);
- background-color: var(--cor-cinza-escuro4);
- border-radius: var(--borda-arredondada);
- border: var(--borda);
+  height: 25px;
+  color: var(--cor-cinza-escuro2);
+  background-color: var(--cor-cinza-escuro4);
+  border-radius: var(--borda-arredondada);
+  border: var(--borda);
 }
 
 main>div>p{
-  font-size: var(--tamanho-fonte-sm);
+   font-size: var(--tamanho-fonte-sm);
   color: var(--cor-4);
 }

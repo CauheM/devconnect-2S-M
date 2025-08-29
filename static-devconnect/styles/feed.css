@@ -1,0 +1,86 @@
+main{
+  background-color: var(--cor-4);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.conteiner-flex-publi{
+  background-color:var(--cor-1);
+  height: 700px; 
+  width: 90%;
+  max-width: 900px; 
+
+}
+
+#stories{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 900px;
+  /* height: 300px; */
+   padding: 10px;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  overflow-x: scroll;
+}
+
+#stories::-webkit-scrollbar{
+   width: 0;
+
+}
+
+.card-story{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.card-story > button{
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: var(--tamanho-fonte-sm);
+  color: #000;
+  gap: 5px;
+}
+
+.card-story>button>img{ 
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+input[type="file"] {
+    display: none;
+  }
+  
+  .upload{
+    padding: 10px 10px;
+    width: 140px;
+    background-color: var(--cor-2);
+    color: #FFF;
+    text-transform: uppercase;
+    border: var(--borda-arredondada);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+  
+  }
+
+  .formulario-botao-verde{
+    width: 150px;
+
+  }
