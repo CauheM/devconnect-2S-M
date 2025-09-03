@@ -1,86 +1,190 @@
-main{
-  background-color: var(--cor-4);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.conteiner-flex-publi{
-  background-color:var(--cor-1);
-  height: 700px; 
-  width: 90%;
-  max-width: 900px; 
-
+.container-flex-publi {
+    background-color: rgb(138, 29, 10);
+    /* height: 700px; */
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#stories{
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  max-width: 900px;
-  /* height: 300px; */
-   padding: 10px;
-   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  overflow-x: scroll;
+#storys {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 30px;
 }
 
-#stories::-webkit-scrollbar{
-   width: 0;
-
+#storys::-webkit-scrollbar{
+    width: 0;
 }
 
 .card-story{
-    background-color: rgb(255, 255, 255);
+    /* background-color: cornflowerblue; */
+}
+
+.card-story>button {
+    background-color: transparent;
+    border: none;
+    /* text-decoration: none; */ /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
+
+    font-size: var(--tamanho-fonte-sm);
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-story>button>img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+#criar-publi{
+  padding: 10px;
+  
+}
+
+/* seção criar publi */
+.formulario-botao-verde{
+    width: 135px;
 
 }
 
-.card-story > button{
-  background-color: transparent;
+#criar-publi > h2{
+  color: var(--cor-cinza-escuro2);
+  font-size: var(--tamanho-fonte-lg);
+  font-weight: 700;
+
+}
+
+#criar-publi > form > textarea{
   width: 100%;
-  border: none;
-  text-decoration: none;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  height: 80px;
+  padding: 10px;
+  resize: none;  /* desabilita a redimensão  */
+  border: var(--borda);
+  color: black;
   font-size: var(--tamanho-fonte-sm);
-  color: #000;
-  gap: 5px;
 }
 
-.card-story>button>img{ 
-  width: 80px;
-  height: 80px;
+#criar-publi > form > textarea::placeholder{
+  color: var(--cor-cinza-medio);
+  
+}
+
+#criar-publi > form {
+  margin-top: 10px;
+
+}
+
+#criar-publi > form > footer{
+ margin-top: 30px;
+ display: flex;
+ justify-content: right;
+ gap: 40px;
+}
+
+/* publicações */
+
+#publicacoes{
+  background-color: aqua;
+  width: 100%;
+  /* height: 600px; */
+}
+
+.card-publi{
+  background-color: #fff;
+  width: 100%;
+   
+}
+
+.card-publi > header{
+  padding: 15px;
+
+}
+
+.card-publi > header > a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  column-gap: 10px;
+  text-transform: lowercase;
+  
+}
+
+.imagem-publicacao{
   object-fit: cover;
   object-position: center;
-  border-radius: 50%;
+  width: 100%;
+  height: 350px;
 }
 
-input[type="file"] {
-    display: none;
-  }
-  
-  .upload{
-    padding: 10px 10px;
-    width: 140px;
-    background-color: var(--cor-2);
-    color: #FFF;
-    text-transform: uppercase;
-    border: var(--borda-arredondada);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    cursor: pointer;
-  
-  }
+.card-publi > figure > figcaption{
+  color: #000;
+  font-size: var(--tamanho-fonte-md);
+  font-weight: 500;
+  display: flex; 
+  align-items: center;
+  column-gap: 5px;
+  order: 2;
+  margin-left: 15px;
+  margin-top: 15px;
 
-  .formulario-botao-verde{
-    width: 150px;
+}
 
-  }
+.descricao-publicacao{
+  font-size: var(--tamanho-fonte-sm);
+  font-weight: 400;
+}
+
+.interacoes-publicacao{
+  display: flex;
+  width: 88px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px;
+  order: 1;
+  cursor: pointer;
+}
+
+.card-publi > figure{
+  display: flex;
+  flex-direction: column;
+}
+
+.interacoes-publicacao > button{
+  background-color: transparent;
+  border: none;
+
+}
+
+.card-publi > figure > button{
+  background-color: transparent;
+  border: none;
+  color: var(--cor-cinza-escuro3);
+  font-size: var(--tamanho-fonte-sm);
+
+  order: 3;
+  display: flex;
+  margin-left: 15px;
+  gap: 10px;
+
+}
