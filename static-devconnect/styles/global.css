@@ -1,12 +1,5 @@
 /* 1 forma de utilizar uma fonte */
-/* @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); */
-
-/* 2 forma de utilizar uma fonte */
-@font-face {
-    font-family: Billabong;
-    src: url(../assets/fonts/Billabong/billabong.ttf),
-        url(../assets/fonts/Billabong/billabong_regular.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* variaveis */
 :root {
