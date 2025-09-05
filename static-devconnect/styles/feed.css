@@ -7,7 +7,7 @@ main {
 }
 
 .container-flex-publi {
-    background-color: rgb(138, 29, 10);
+
     /* height: 700px; */
     width: 90%;
     max-width: 900px;
@@ -117,6 +117,7 @@ main {
 
 .card-publi > header{
   padding: 15px;
+  border: var(--borda);
 
 }
 
@@ -159,21 +160,29 @@ main {
   display: flex;
   width: 88px;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 15px;
   order: 1;
   cursor: pointer;
+  justify-content: space-around;
 }
 
 .card-publi > figure{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  border: var(--borda);
+}
+
+.interacoes-publicacao > span{
+  font-weight: bold;
+
+
 }
 
 .interacoes-publicacao > button{
   background-color: transparent;
   border: none;
-
+  gap: 15px;
 }
 
 .card-publi > figure > button{
