@@ -172,4 +172,11 @@ main {
     font-size: var(--tamanho-fonte-sm);
 }
 
-
+@media only screen and (max-width: 500px) {
+    .perfil-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }  
+}
