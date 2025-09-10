@@ -91,6 +91,13 @@ main {
     padding-bottom: 10px;
 }
 
+.titulo-publicacoes > a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
 .card-publi {
     max-width: 600px;
     margin: 0 auto 25px auto;
@@ -104,14 +111,34 @@ main {
     margin-bottom: 10px;
 }
 
-.card-publi > p {
-    font-size: 14px;
+.card-publi > strong {
+    font-size: var(--tamanho-fonte-sm);
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
+.card-publi > figcaption {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  margin-top: 3px;
+}
+ 
+.card-publi > p {
+    font-size: var(--tamanho-fonte-sm);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card-publi > img{
+  width: 100%;
+  border: var(--borda);
+  gap: 5px;
+ 
+}
 
 .interacoes-publicacao {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 15px;
